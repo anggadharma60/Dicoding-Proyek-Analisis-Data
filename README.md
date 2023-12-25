@@ -17,6 +17,6 @@ streamlit run dashboard.py
 ## Run steamlit app Online
 ```
 open browser
-copy and paste https://pad-anggadharma60.streamlit.app/
+copy and paste https://anggadharma60pad.streamlit.app/
 then Go
 ```
