@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Dicoding Collection Dashboard ✨
 
 ## Setup environment
@@ -16,4 +16,4 @@ streamlit run dashboard.py
 =======
 # Dicoding-Proyek-Analisis-Data
 Dicoding Submission 
->>>>>>> main
+
