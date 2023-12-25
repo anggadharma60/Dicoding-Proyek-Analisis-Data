@@ -50,7 +50,7 @@ rfm_df = df_rfm(all_df, now)
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("logo.png")
+    st.image("dashboard/logo.png")
     
 st.header('Dicoding Collection Dashboard :sparkles:')
 
