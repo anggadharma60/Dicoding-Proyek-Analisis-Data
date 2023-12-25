@@ -41,7 +41,7 @@ def df_rfm(df, now):
     return rfm
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("dashboard/all_data.csv")
 all_df['order_purchase_timestamp']=pd.to_datetime(all_df['order_purchase_timestamp'])
 now = pd.to_datetime('2018-09-1 00:00:00')
 payment_type = df_payment_type(all_df)
