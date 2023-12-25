@@ -2,6 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 import streamlit as st
+import os
 from babel.numbers import format_currency
 
 sns.set(style='dark')
@@ -41,7 +42,7 @@ def df_rfm(df, now):
     return rfm
 
 # Load cleaned data
-all_df = pd.read_csv("dashboard/all_data.csv")
+all_df = pd.read_csv(os.path.join(os.getcwd(), "all_data.csv"))
 all_df['order_purchase_timestamp']=pd.to_datetime(all_df['order_purchase_timestamp'])
 now = pd.to_datetime('2018-09-1 00:00:00')
 payment_type = df_payment_type(all_df)
@@ -50,7 +51,7 @@ rfm_df = df_rfm(all_df, now)
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("dashboard/logo.png")
+    st.image("logo.png")
     
 st.header('Dicoding Collection Dashboard :sparkles:')
 
