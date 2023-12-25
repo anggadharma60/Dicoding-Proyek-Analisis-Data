@@ -13,11 +13,8 @@ pip install requirements.txt
 cd dashboard
 streamlit run dashboard.py
 ```
+
 ## Run steamlit app Online
 ```
 
 ```
-
-# Dicoding-Proyek-Analisis-Data
-Dicoding Submission 
-
