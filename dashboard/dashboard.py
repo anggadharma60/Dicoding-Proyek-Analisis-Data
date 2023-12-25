@@ -42,7 +42,7 @@ def df_rfm(df, now):
     return rfm
 
 # Load cleaned data
-all_df = pd.read_csv("all_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/anggadharma60/Dicoding-Proyek-Analisis-Data/main/dashboard/all_data.csv")
 all_df['order_purchase_timestamp']=pd.to_datetime(all_df['order_purchase_timestamp'])
 now = pd.to_datetime('2018-09-1 00:00:00')
 payment_type = df_payment_type(all_df)
@@ -51,7 +51,7 @@ rfm_df = df_rfm(all_df, now)
 
 with st.sidebar:
     # Menambahkan logo perusahaan
-    st.image("logo.png")
+    st.image("https://raw.githubusercontent.com/anggadharma60/Dicoding-Proyek-Analisis-Data/main/dashboard/logo.png")
 
     
 st.header('Dicoding Collection Dashboard :sparkles:')
