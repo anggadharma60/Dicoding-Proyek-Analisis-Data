@@ -43,7 +43,7 @@ def df_rfm(df, now):
     return rfm
 
 # Load cleaned data
-all_df = pd.read_csv("https://github.com/anggadharma60/Dicoding-Proyek-Analisis-Data/blob/main/dashboard/all_data.csv")
+all_df = pd.read_csv("https://raw.githubusercontent.com/anggadharma60/Dicoding-Proyek-Analisis-Data/main/dashboard/all_data.csv")
 all_df['order_purchase_timestamp']=pd.to_datetime(all_df['order_purchase_timestamp'])
 now = pd.to_datetime('2018-09-1 00:00:00')
 payment_type = df_payment_type(all_df)
